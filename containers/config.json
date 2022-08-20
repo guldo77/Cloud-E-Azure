@@ -1,0 +1,470 @@
+{
+    "ociVersion": "1.0.2",
+    "process": {
+        "user": {
+            "uid": 0,
+            "gid": 0
+        },
+        "args": [
+            "/usr/bin/docker-init",
+            "/usr/bin/entrypoint.sh"
+        ],
+        "env": [
+            "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+            "KUBECONFIG=/etc/kubernetes/admin.conf"
+        ],
+        "cwd": "/",
+        "capabilities": {
+            "bounding": [
+                "CAP_AUDIT_CONTROL",
+                "CAP_AUDIT_READ",
+                "CAP_AUDIT_WRITE",
+                "CAP_BLOCK_SUSPEND",
+                "CAP_CHOWN",
+                "CAP_DAC_OVERRIDE",
+                "CAP_DAC_READ_SEARCH",
+                "CAP_FOWNER",
+                "CAP_FSETID",
+                "CAP_IPC_LOCK",
+                "CAP_IPC_OWNER",
+                "CAP_KILL",
+                "CAP_LEASE",
+                "CAP_LINUX_IMMUTABLE",
+                "CAP_MAC_ADMIN",
+                "CAP_MAC_OVERRIDE",
+                "CAP_MKNOD",
+                "CAP_NET_ADMIN",
+                "CAP_NET_BIND_SERVICE",
+                "CAP_NET_BROADCAST",
+                "CAP_NET_RAW",
+                "CAP_SETFCAP",
+                "CAP_SETGID",
+                "CAP_SETPCAP",
+                "CAP_SETUID",
+                "CAP_SYSLOG",
+                "CAP_SYS_ADMIN",
+                "CAP_SYS_BOOT",
+                "CAP_SYS_CHROOT",
+                "CAP_SYS_MODULE",
+                "CAP_SYS_NICE",
+                "CAP_SYS_PACCT",
+                "CAP_SYS_PTRACE",
+                "CAP_SYS_RAWIO",
+                "CAP_SYS_RESOURCE",
+                "CAP_SYS_TIME",
+                "CAP_SYS_TTY_CONFIG",
+                "CAP_WAKE_ALARM"
+            ],
+            "effective": [
+                "CAP_AUDIT_CONTROL",
+                "CAP_AUDIT_READ",
+                "CAP_AUDIT_WRITE",
+                "CAP_BLOCK_SUSPEND",
+                "CAP_CHOWN",
+                "CAP_DAC_OVERRIDE",
+                "CAP_DAC_READ_SEARCH",
+                "CAP_FOWNER",
+                "CAP_FSETID",
+                "CAP_IPC_LOCK",
+                "CAP_IPC_OWNER",
+                "CAP_KILL",
+                "CAP_LEASE",
+                "CAP_LINUX_IMMUTABLE",
+                "CAP_MAC_ADMIN",
+                "CAP_MAC_OVERRIDE",
+                "CAP_MKNOD",
+                "CAP_NET_ADMIN",
+                "CAP_NET_BIND_SERVICE",
+                "CAP_NET_BROADCAST",
+                "CAP_NET_RAW",
+                "CAP_SETFCAP",
+                "CAP_SETGID",
+                "CAP_SETPCAP",
+                "CAP_SETUID",
+                "CAP_SYSLOG",
+                "CAP_SYS_ADMIN",
+                "CAP_SYS_BOOT",
+                "CAP_SYS_CHROOT",
+                "CAP_SYS_MODULE",
+                "CAP_SYS_NICE",
+                "CAP_SYS_PACCT",
+                "CAP_SYS_PTRACE",
+                "CAP_SYS_RAWIO",
+                "CAP_SYS_RESOURCE",
+                "CAP_SYS_TIME",
+                "CAP_SYS_TTY_CONFIG",
+                "CAP_WAKE_ALARM"
+            ],
+            "inheritable": [
+                "CAP_AUDIT_CONTROL",
+                "CAP_AUDIT_READ",
+                "CAP_AUDIT_WRITE",
+                "CAP_BLOCK_SUSPEND",
+                "CAP_CHOWN",
+                "CAP_DAC_OVERRIDE",
+                "CAP_DAC_READ_SEARCH",
+                "CAP_FOWNER",
+                "CAP_FSETID",
+                "CAP_IPC_LOCK",
+                "CAP_IPC_OWNER",
+                "CAP_KILL",
+                "CAP_LEASE",
+                "CAP_LINUX_IMMUTABLE",
+                "CAP_MAC_ADMIN",
+                "CAP_MAC_OVERRIDE",
+                "CAP_MKNOD",
+                "CAP_NET_ADMIN",
+                "CAP_NET_BIND_SERVICE",
+                "CAP_NET_BROADCAST",
+                "CAP_NET_RAW",
+                "CAP_SETFCAP",
+                "CAP_SETGID",
+                "CAP_SETPCAP",
+                "CAP_SETUID",
+                "CAP_SYSLOG",
+                "CAP_SYS_ADMIN",
+                "CAP_SYS_BOOT",
+                "CAP_SYS_CHROOT",
+                "CAP_SYS_MODULE",
+                "CAP_SYS_NICE",
+                "CAP_SYS_PACCT",
+                "CAP_SYS_PTRACE",
+                "CAP_SYS_RAWIO",
+                "CAP_SYS_RESOURCE",
+                "CAP_SYS_TIME",
+                "CAP_SYS_TTY_CONFIG",
+                "CAP_WAKE_ALARM"
+            ],
+            "permitted": [
+                "CAP_AUDIT_CONTROL",
+                "CAP_AUDIT_READ",
+                "CAP_AUDIT_WRITE",
+                "CAP_BLOCK_SUSPEND",
+                "CAP_CHOWN",
+                "CAP_DAC_OVERRIDE",
+                "CAP_DAC_READ_SEARCH",
+                "CAP_FOWNER",
+                "CAP_FSETID",
+                "CAP_IPC_LOCK",
+                "CAP_IPC_OWNER",
+                "CAP_KILL",
+                "CAP_LEASE",
+                "CAP_LINUX_IMMUTABLE",
+                "CAP_MAC_ADMIN",
+                "CAP_MAC_OVERRIDE",
+                "CAP_MKNOD",
+                "CAP_NET_ADMIN",
+                "CAP_NET_BIND_SERVICE",
+                "CAP_NET_BROADCAST",
+                "CAP_NET_RAW",
+                "CAP_SETFCAP",
+                "CAP_SETGID",
+                "CAP_SETPCAP",
+                "CAP_SETUID",
+                "CAP_SYSLOG",
+                "CAP_SYS_ADMIN",
+                "CAP_SYS_BOOT",
+                "CAP_SYS_CHROOT",
+                "CAP_SYS_MODULE",
+                "CAP_SYS_NICE",
+                "CAP_SYS_PACCT",
+                "CAP_SYS_PTRACE",
+                "CAP_SYS_RAWIO",
+                "CAP_SYS_RESOURCE",
+                "CAP_SYS_TIME",
+                "CAP_SYS_TTY_CONFIG",
+                "CAP_WAKE_ALARM"
+            ]
+        }
+    },
+    "root": {
+        "path": "rootfs"
+    },
+    "mounts": [
+        {
+            "destination": "/dev",
+            "type": "bind",
+            "source": "/dev",
+            "options": [
+                "rw",
+                "rbind",
+                "rshared"
+            ]
+        },
+        {
+            "destination": "/dev/pts",
+            "type": "devpts",
+            "source": "devpts",
+            "options": [
+                "nosuid",
+                "noexec",
+                "newinstance",
+                "ptmxmode=0666",
+                "mode=0620"
+            ]
+        },
+        {
+            "destination": "/etc/cni/net.d",
+            "type": "bind",
+            "source": "/var/lib/cni/conf",
+            "options": [
+                "rshared",
+                "rbind",
+                "rbind"
+            ]
+        },
+        {
+            "destination": "/etc/host-hypervisor",
+            "type": "bind",
+            "source": "/etc/host-hypervisor",
+            "options": [
+                "rw",
+                "rbind",
+                "rshared"
+            ]
+        },
+        {
+            "destination": "/etc/kube-images",
+            "type": "bind",
+            "source": "/etc/kube-images",
+            "options": [
+                "rw",
+                "rbind",
+                "rshared"
+            ]
+        },
+        {
+            "destination": "/etc/kubernetes",
+            "type": "bind",
+            "source": "/var/lib/kubeadm",
+            "options": [
+                "rw",
+                "rbind",
+                "rshared"
+            ]
+        },
+        {
+            "destination": "/etc/os-release",
+            "type": "bind",
+            "source": "/etc/os-release",
+            "options": [
+                "rw",
+                "rbind",
+                "rshared"
+            ]
+        },
+        {
+            "destination": "/etc/resolv.conf",
+            "type": "bind",
+            "source": "/run/resolvconf/resolv.conf",
+            "options": [
+                "rw",
+                "rbind",
+                "rshared"
+            ]
+        },
+        {
+            "destination": "/etc/vpnkit-expose-port.json",
+            "type": "bind",
+            "source": "/etc/vpnkit-expose-port.json",
+            "options": [
+                "rw",
+                "rbind",
+                "rshared"
+            ]
+        },
+        {
+            "destination": "/lib/modules",
+            "type": "bind",
+            "source": "/lib/modules",
+            "options": [
+                "rw",
+                "rbind",
+                "rshared"
+            ]
+        },
+        {
+            "destination": "/proc",
+            "type": "proc",
+            "source": "proc",
+            "options": [
+                "nosuid",
+                "nodev",
+                "noexec",
+                "relatime"
+            ]
+        },
+        {
+            "destination": "/run/config",
+            "type": "bind",
+            "source": "/run/config",
+            "options": [
+                "rw",
+                "rbind",
+                "rshared"
+            ]
+        },
+        {
+            "destination": "/run/desktop",
+            "type": "bind",
+            "source": "/run/desktop",
+            "options": [
+                "rshared",
+                "rbind",
+                "rbind"
+            ]
+        },
+        {
+            "destination": "/run/guest-services",
+            "type": "bind",
+            "source": "/run/guest-services",
+            "options": [
+                "rshared",
+                "rbind",
+                "rbind"
+            ]
+        },
+        {
+            "destination": "/run/host-services",
+            "type": "bind",
+            "source": "/run/host-services",
+            "options": [
+                "rw",
+                "rbind",
+                "rshared"
+            ]
+        },
+        {
+            "destination": "/sys",
+            "type": "sysfs",
+            "source": "sysfs",
+            "options": [
+                "nosuid",
+                "noexec",
+                "nodev"
+            ]
+        },
+        {
+            "destination": "/sys/fs/cgroup",
+            "type": "bind",
+            "source": "/sys/fs/cgroup",
+            "options": [
+                "rw",
+                "rbind",
+                "rshared",
+                "nosuid",
+                "noexec",
+                "nodev",
+                "relatime"
+            ]
+        },
+        {
+            "destination": "/usr/bin/lifecycle-server",
+            "type": "bind",
+            "source": "/usr/bin/lifecycle-server",
+            "options": [
+                "rw",
+                "rbind",
+                "rshared"
+            ]
+        },
+        {
+            "destination": "/usr/bin/logwrite",
+            "type": "bind",
+            "source": "/usr/bin/logwrite",
+            "options": [
+                "rw",
+                "rbind",
+                "rshared"
+            ]
+        },
+        {
+            "destination": "/usr/bin/transfused",
+            "type": "bind",
+            "source": "/usr/bin/transfused",
+            "options": [
+                "rw",
+                "rbind",
+                "rshared"
+            ]
+        },
+        {
+            "destination": "/usr/lib/wsl",
+            "type": "bind",
+            "source": "/usr/lib/wsl",
+            "options": [
+                "rshared",
+                "rbind",
+                "rbind"
+            ]
+        },
+        {
+            "destination": "/usr/libexec/kubernetes/kubelet-plugins",
+            "type": "bind",
+            "source": "/var/lib/kubelet-plugins",
+            "options": [
+                "rshared",
+                "rbind",
+                "rbind"
+            ]
+        },
+        {
+            "destination": "/var/lib",
+            "type": "bind",
+            "source": "/var/lib",
+            "options": [
+                "rw",
+                "rbind",
+                "rshared"
+            ]
+        },
+        {
+            "destination": "/var/log",
+            "type": "bind",
+            "source": "/var/log",
+            "options": [
+                "rshared",
+                "rbind",
+                "rbind"
+            ]
+        },
+        {
+            "destination": "/var/run/linuxkit-containerd/containerd.sock",
+            "type": "bind",
+            "source": "/run/containerd/containerd.sock",
+            "options": [
+                "rw",
+                "rbind",
+                "rshared"
+            ]
+        },
+        {
+            "destination": "/var/run/linuxkit-external-logging.sock",
+            "type": "bind",
+            "source": "/run/linuxkit-external-logging.sock",
+            "options": [
+                "rw",
+                "rbind",
+                "rshared"
+            ]
+        }
+    ],
+    "linux": {
+        "resources": {
+            "devices": [
+                {
+                    "allow": true,
+                    "type": "a",
+                    "access": "rwm"
+                }
+            ]
+        },
+        "cgroupsPath": "podruntime/docker",
+        "namespaces": [
+            {
+                "type": "mount"
+            }
+        ],
+        "rootfsPropagation": "shared"
+    }
+}
