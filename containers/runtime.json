@@ -1,0 +1,54 @@
+{
+    "cgroups": [
+        "systemreserved",
+        "podruntime",
+        "kubepods"
+    ],
+    "mounts": [
+        {
+            "destination": "/containers/services/docker/tmp",
+            "type": "tmpfs",
+            "source": "tmpfs"
+        },
+        {
+            "destination": "/containers/services/docker/tmp",
+            "options": [
+                "remount",
+                "private"
+            ]
+        },
+        {
+            "destination": "/containers/services/docker/rootfs",
+            "type": "overlay",
+            "source": "overlay",
+            "options": [
+                "lowerdir=/containers/services/docker/lower",
+                "upperdir=/containers/services/docker/tmp/upper",
+                "workdir=/containers/services/docker/tmp/work"
+            ]
+        }
+    ],
+    "mkdir": [
+        "/run/desktop",
+        "/run/guest-services",
+        "/run/host-services",
+        "/run/config/proxy",
+        "/run/config/docker",
+        "/var/lib/kubeadm",
+        "/var/lib/cni/conf",
+        "/var/lib/kubelet-plugins",
+        "/var/lib/nfs/statd/sm",
+        "/usr/lib/wsl"
+    ],
+    "interfaces": [],
+    "bindNS": {
+        "cgroup": "",
+        "ipc": "",
+        "mnt": "",
+        "net": "",
+        "pid": "",
+        "user": "",
+        "uts": ""
+    },
+    "namespace": ""
+}

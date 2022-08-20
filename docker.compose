@@ -1,0 +1,43 @@
+#!/usr/bin/env sh
+#
+# Copyright (c) Docker Inc.
+
+binary=$(basename "$0")
+case "$(uname -r)" in
+    *microsoft* )
+        # WSL 2
+        if [ -f "/usr/bin/$binary" ]; then
+            # It seems this script ran before the integration added the real binary.
+            # Run the real binary for the user.
+            set -e
+            "/usr/bin/$binary" "$@"
+        else
+            echo
+            echo "The command '$binary' could not be found in this WSL 2 distro."
+            echo "We recommend to activate the WSL integration in Docker Desktop settings."
+            echo
+            echo "For details about using Docker Desktop with WSL 2, visit:"
+            echo
+            echo "https://docs.docker.com/go/wsl2/"
+            echo
+            exit 1
+        fi
+        ;;
+    *Microsoft* )
+        # WSL 1
+        echo
+        echo "The command '$binary' could not be found in this WSL 1 distro."
+        echo "We recommend to convert this distro to WSL 2 and activate"
+        echo "the WSL integration in Docker Desktop settings."
+        echo
+        echo "For details about using Docker Desktop with WSL 2, visit:"
+        echo
+        echo "https://docs.docker.com/go/wsl2/"
+        echo
+        exit 1
+        ;;
+    * )
+        # No WSL, maybe MINGW, try Windows exe which should also be in PATH
+        "$binary.exe" "$@"
+        ;;
+esac
