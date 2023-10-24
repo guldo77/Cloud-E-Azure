@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "github": "^14.0.0",
+    "github": "^14.7.1",
     "json": "^11.0.0",
     "lock": "^1.1.0",
     "nodejs": "^0.0.0",
@@ -10,7 +10,7 @@
   },
   "name": "cloud",
   "description": "Site correspondant à mon Client Detrax ![Internet_Business_Technology_HD_Wallpaper_04_1366x768](https://user-images.githubusercontent.com/98873011/167702442-ea135be2-1e33-4b9f-a3a8-36756061e394.jpg)",
-  "version": "1.0.0",
+  "version": "1.0.9",
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
